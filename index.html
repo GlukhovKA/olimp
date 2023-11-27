@@ -20,6 +20,7 @@
   <script src="js\bootstrap.bundle.js"></script>
   <script src="js\jquery-3.7.1.min.js"></script>
   <script src="js\owl.carousel.js"></script>
+  <script src="js/jquery.cookie.js"></script>
   <script src="js\index.js"></script>
 
 </head>
@@ -27,31 +28,93 @@
 <body>
   <div class="full-head">
     <div class="bg-head">
-      <div class="row justify-content-start" style="height: 328px; margin-right: 0px;">
+      <div class="row justify-content-start" style="min-height: 328px; margin-right: 0px;">
         <div class="col-2 align-self-center text-center">
           <img src="assets\pictures\olimp.svg" alt="">
         </div>
         <div class="col-9 align-self-center text-end">
-          <h5>Государственное бюджетное учреждение дополнительного образования </h5>
-          <h5>«Нижегородская областная спортивная школа „Олимпиец“» </h5>
+          <div class="bg-head-h5">Государственное бюджетное учреждение дополнительного образования </div>
+          <div class="bg-head-h5">«Нижегородская областная спортивная школа „Олимпиец“» </div>
           <div class="row justify-content-end">
             <div class="col-9 justify-content-center">
               <hr>
+
               <ul class="list-inline" style="display: flex;">
                 <li class="list-inline-item" style="flex-basis: auto; flex-grow: 1">
-                  <h6>Телефон: <a href="tel:+78312451823">+7(831)245-18-23</a></h6>
+                  <div class="bg-head-h6">Телефон: <a href="tel:+78312451823">+7(831)245-18-23</a></div class="bg-head-h6">
                 </li>
                 <li class="list-inline-item" style="flex-basis: auto; flex-grow: 1">
-                  <h6>Эл. почта: <a href="mailto:do_olimpiyets_nn@mail.52gov.ru">do_olimpiyets_nn@mail.52gov.ru</a></h6>
+                  <div class="bg-head-h6">Эл. почта: <a href="mailto:do_olimpiyets_nn@mail.52gov.ru">do_olimpiyets_nn@mail.52gov.ru</a></div class="bg-head-h6">
                 </li>
-                <li class="list-inline-item" style="flex-basis: auto; flex-grow: 0">
-                  <h6>Адрес: <a target="_blank" href="https://yandex.ru/maps/-/CDewUEOa">г. Нижний Новгород, ул.
-                      Украинская 10 «А»</a></h6>
+                <li class="list-inline-item" style="flex-basis: auto; flex-grow: 0; margin-bottom: 10px;">
+                  <div class="bg-head-h6">Адрес: <a target="_blank" href="https://yandex.ru/maps/-/CDewUEOa">г. Нижний Новгород, ул.
+                      Украинская 10 «А»</a></div class="bg-head-h6">
                 </li>
               </ul>
             </div>
           </div>
-          <!-- поиск и чет еще -->
+
+          <div class="row justify-content-end">
+            <div class="col-9 justify-content-center">
+              <div class="tg-vk-head">
+                <img src="assets/pictures/vk-head.svg" alt="vk" style="margin-right: 5px;">
+                <img src="assets/pictures/tg-head.svg" alt="tg" style="margin-right: 5px;">
+                <input type="search" class="search" placeholder="Поиск по сайту">
+                <img class="search-b" src="assets/pictures/search-b.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-end">
+            <div class="col-9 justify-content-center">
+              <a id="special_link" class="box__item-blind justify-content-end">
+                <img src="assets/pictures/ochki.svg" id="show_img" alt="" style="margin-bottom: 3px;">
+              </a>
+
+              <a class="text-block justify-content-end">
+                Карта сайта
+              </a>
+              <a class="text-block justify-content-end">
+                Версия для печати
+              </a>
+              <a class="text-block-lang justify-content-end">
+                RU
+              </a>
+              <a class="text-block-lang justify-content-end active">
+                EN
+              </a>
+
+
+
+              <div class="cecutient" data-fontsize="15">
+                <div id="cecutient_props">
+                  <p><b style="font-size: 16px !important;">Размер шрифта: </b></p>
+                  <a href="#" id="fontminus"> - А</a> <a href="#" id="fontplus"> + А</a>
+                </div>
+                <div id="cecutient_props_image">
+                  <p><b style="font-size: 16px !important;">Настройки изображений: </b></p>
+                  <input type="radio" id="show_image_yes" name="show_image" value="Y" checked="checked">
+                  <label for="show_image_yes">Показать изображения</label>
+                  <input type="radio" id="show_image_no" name="show_image" value="N">
+                  <label for="show_image_no">Скрыть изображения</label>
+                </div>
+                <div id="cecutient_props_color">
+                  <p><b style="font-size: 16px !important;">Цветовая схема: </b></p>
+                  <input type="radio" id="site_color_wb" name="site_color" value="wb">
+                  <label for="site_color_wb"
+                    style="background: #FFF !important; color: #000 !important; border-color: #000 !important">А</label>
+                  <input type="radio" id="site_color_bw" name="site_color" value="bw">
+                  <label for="site_color_bw"
+                    style="background: #000 !important; color: #FFF !important; border-color: #000 !important">А</label>
+                  <input type="radio" id="site_color_bb" name="site_color" value="bb">
+                  <label for="site_color_bb"
+                    style="background: #9dd1ff !important; color: #063462 !important; border-color: #063462 !important">А</label>
+                </div>
+                <a href="#" id="cecutient_props_usual">Обычная версия сайта</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -172,7 +235,7 @@
         <button type="button" class="btn btn-primary gos-uslugi">Напишите об этом</button>
       </div>
       <div class="col-6 align-self-center text-end">
-        <img src="assets\pictures\gos-uslugi.png" alt="">
+        <img src="assets\pictures\gos-uslugi.png" alt="" class="img-gos">
       </div>
     </div>
   </div>
@@ -356,7 +419,7 @@
                 <hr class="line-news">
               </div>
               <a href="" style="margin-top: 30px;">
-                <h5 style="text-decoration: underline;" class="card-text align-self-start"><strong>Подробнее</strong>
+                <h5 style="text-decoration: underline;" class="card-text align-self-start"><strong>Читать больше новостей</strong>
                 </h5>
               </a>
             </div>
@@ -406,36 +469,36 @@
   <div class='promo-block items-wrap'>
     <div class="img-promo marquee items marquee">
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_1.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_1.png">
+      </div>
+      <div  class="promo item">
+        <img class="str" src="assets/pictures/promo_str/promo-str_2.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_2.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_3.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_3.png">
-      </div>
-      <div class="promo tem">
-        <img src="assets/pictures/promo_str/promo-str_4.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_4.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_5.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_5.png">
       </div>
     </div>
     <div aria-hidden="true" class="img-promo marquee items marquee">
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_1.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_1.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_2.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_2.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_3.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_3.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_4.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_4.png">
       </div>
       <div class="promo item">
-        <img src="assets/pictures/promo_str/promo-str_5.png">
+        <img class="str" src="assets/pictures/promo_str/promo-str_5.png">
       </div>
     </div>
   </div>
@@ -447,30 +510,60 @@
           <img src="assets\pictures\olimp-footer.svg" alt="">
         </div>
         <div class="col-lg-3">
-          <p><strong>Навигация по сайту:</strong></p>
-          <a href="#"><p>Главная страница</p></a>
-          <a href="#"><p>Сведения об образовательной организации</p></a>
-          <a href="#"><p>Всероссийские соревнования</p></a>
-          <a href="#"><p>Отдел спортивной подготовки</p></a>
-          <a href="#"><p>Российские образовательные проекты</p></a>
-          <a href="#"><p>Педагогам и руководителям</p></a>
-          <a href="#"><p>Конкурсы, акции, фестивали</p></a>
+          <div class="p-strong">Навигация по сайту:</div>
+          <a href="#">
+            <p>Главная страница</p>
+          </a>
+          <a href="#">
+            <p>Сведения об образовательной организации</p>
+          </a>
+          <a href="#">
+            <p>Всероссийские соревнования</p>
+          </a>
+          <a href="#">
+            <p>Отдел спортивной подготовки</p>
+          </a>
+          <a href="#">
+            <p>Российские образовательные проекты</p>
+          </a>
+          <a href="#">
+            <p>Педагогам и руководителям</p>
+          </a>
+          <a href="#">
+            <p>Конкурсы, акции, фестивали</p>
+          </a>
         </div>
         <div class="col-lg-3">
-          <p><strong>Дополнительные разделы:</strong></p>
-          <a href="#"><p>Реестр ШСК</p></a>
-          <a href="#"><p>Комплект документов для ШКС</p></a>
-          <a href="#"><p>Мониторинг программ ШКС</p></a>
-          <a href="#"><p>Региональные координаторы</p></a>
-          <a href="#"><p>Сетевое взаимодействие</p></a>
-          <a href="#"><p>Обучающие семинары</p></a>
-          <a href="#"><p>ПС и ПСИ</p></a>
-          <a href="#"><p>ВСИ ШСК</p></a>
+          <div class="p-strong">Дополнительные разделы:</div>
+          <a href="#">
+            <p>Реестр ШСК</p>
+          </a>
+          <a href="#">
+            <p>Комплект документов для ШКС</p>
+          </a>
+          <a href="#">
+            <p>Мониторинг программ ШКС</p>
+          </a>
+          <a href="#">
+            <p>Региональные координаторы</p>
+          </a>
+          <a href="#">
+            <p>Сетевое взаимодействие</p>
+          </a>
+          <a href="#">
+            <p>Обучающие семинары</p>
+          </a>
+          <a href="#">
+            <p>ПС и ПСИ</p>
+          </a>
+          <a href="#">
+            <p>ВСИ ШСК</p>
+          </a>
         </div>
         <div class="col-lg-3">
-          <p><strong>Наши контакты:</strong></p>
+          <div class="p-strong">Наши контакты:</div>
           <p>Адрес: <a target="_blank" href="https://yandex.ru/maps/-/CDewUEOa">г. Нижний Новгород, ул.
-            Украинская 10 «А»</a></p>
+              Украинская 10 «А»</a></p>
           <p>Телефон: <a href="tel:+78312451823">+7(831)245-18-23</a></p>
           <p>Эл.почта: <a href="mailto:do_olimpiyets_nn@mail.52gov.ru">do_olimpiyets_nn@mail.52gov.ru</a></p>
           <div class="tg-vk">
@@ -487,7 +580,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 
