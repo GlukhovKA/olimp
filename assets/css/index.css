@@ -31,6 +31,10 @@ a{
 
 }
 
+textarea:focus, input:focus{
+  font-family: 'Jost';
+}
+
 .feedback-block h1 {
     font-family: 'Jost';
     font-size: 36px;
@@ -144,6 +148,20 @@ button.gos-uslugi {
     margin-bottom: 50px;
 }
 
+.card.section {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px !important;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(55, 113, 201, 0.5);
+  margin-bottom: 50px;
+  transition: all .2s ease-in-out;
+}
+
+.card.section:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
 .cards-holder h2 {
     font-family: 'Jost';
     font-size: 30px;
@@ -250,6 +268,8 @@ hr {
 background-color: rgba(111, 146, 203, 1);
 min-height: 328px;
 background-image: url(../pictures/olimp-head.png);
+background-repeat: no-repeat;
+background-position: bottom right;
 }
 
 .sticky {
@@ -508,6 +528,10 @@ nav {
     color: #FFF;
     padding-left: 15px;
   }
+
+  .search:focus{
+    outline: none;
+}
 
   ::placeholder {
     color: rgba(255, 255, 255, 0.6);
