@@ -12,8 +12,12 @@ function myFunction() {
   }
 }
 
+$('.second-button').on('click', function () {
+    $('.animated-icon2').toggleClass('open');
+	$('body').toggleClass('over-h')
+  });
+
 let owl= $('.owl-carousel');
-console.log(owl);
     owl.owlCarousel({
         loop:true,
         margin: 0,
@@ -23,13 +27,15 @@ console.log(owl);
             0:{
                 items:1
             },
-            1000:{
+            1049:{
                 items:3
             }
         },
     })
 
 })
+
+
 
 $(document).ready(function() {
 	
@@ -94,6 +100,21 @@ $(document).ready(function() {
 		return false;
 	});
 	
+  $('#special_link_mob').click(function(){
+		if($('#cecutient_props').css('display') == 'none'){
+			$('#cecutient_props').css('display', 'block');
+			$('#cecutient_props_image').css('display', 'block');
+			$('#cecutient_props_usual').css('display', 'block');
+			$('#cecutient_props_color').css('display', 'block');
+		} else {
+			$('#cecutient_props').css('display', 'none');
+			$('#cecutient_props_image').css('display', 'none');
+			$('#cecutient_props_usual').css('display', 'none'); 
+			$('#cecutient_props_color').css('display', 'none');
+		}
+		return false;
+	});
+
 	$('#fontminus').click(function(){
 		size = $('#fontminus').closest('.cecutient').attr('data-fontsize');
 		size = size - 2;
