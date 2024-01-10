@@ -154,7 +154,7 @@ button.gos-uslugi {
   padding: 30px;
   box-shadow: 0px 0px 15px rgba(55, 113, 201, 0.5);
   margin-bottom: 50px;
-  height: 550px;
+  height: 570px;
   /* margin-left: 10px;
   margin-right: 10px; */
   transition: all .2s ease-in-out;
@@ -354,6 +354,10 @@ nav {
   overflow: hidden;
 }
 
+a.card-text:hover { 
+  text-decoration: underline #040A3D;
+}
+
 .dropdown .dropdown-menu { 
   display: block; 
   visibility: hidden;
@@ -408,6 +412,12 @@ nav {
   }
 }
 
+@media (max-width: 1199px) {
+  .foot-image {
+    display: none;
+  }
+}
+
 @media (max-width: 1107px) {
   .nav-text-one {
     padding-top: 2.45em !important;
@@ -437,6 +447,7 @@ nav {
     background-color: rgba(111, 146, 203, 1);
     min-height: 438px;
     height: 488px;
+   
   }
 
   .card.section {
@@ -452,8 +463,20 @@ nav {
     width: 100vw;
     display: block;
     position: absolute;
-    height: 95vh ;
-    z-index: 2;
+    height: 94% ;
+  }
+
+  .collapsing {
+    background-image: url(../pictures/olimp-head.png);
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: rgba(111, 146, 203, 1);
+    width: 100vw;
+    display: block;
+    position: absolute;
+    height: 94% ;
+    transition: height 0.35s ease-out !important;
   }
 
   .gos-uslugi h4 {
@@ -879,8 +902,8 @@ img.pin {
 }
 
 .cecutient {
-  position: fixed;
-  right: 0%;
+  position: absolute;
+  right: 2%;
   top: 300px;
   padding: 10px 10px;
   display: none;
@@ -891,7 +914,9 @@ img.pin {
   background-color: #fff;
   font-weight: bold !important;
   box-shadow: 0 0px 10px -1px;
-  z-index: 10000;
+  z-index: 1000;
+  border-radius: 20px;
+  padding: 15px 20px 20px 20px;
 }
 
 #cecutient_props {
