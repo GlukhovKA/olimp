@@ -1,5 +1,7 @@
 body {}
 
+:root { --width: 420px; }
+
 .img-gos {
   resize: horizontal;
   width: 100%;
@@ -140,6 +142,43 @@ button.gos-uslugi {
   border-radius: 0px 0px 75px 75px;
 }
 
+.gallery-holder {
+  padding-bottom: 100px;
+}
+
+ul#pages-gallery {
+  margin: 30px 0 -15px 0;
+}
+
+ul#pages-gallery li {
+  display:inline;
+}
+
+ul#pages-gallery li a {
+  text-decoration: none;
+  color: #040A3D !important;
+  font-weight: 600 !important;
+}
+
+.gallery-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-one-picture {
+  width: var(--width);
+  height: calc(var(--width) * 0.75);
+  padding: 10px 10px;
+}
+
+.img-gallery {
+  vertical-align: middle;
+    object-fit: cover;
+    height: fit-content;
+    width: 100%;
+    height: 100%;
+}
+
 .card {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px !important;
@@ -158,6 +197,14 @@ button.gos-uslugi {
   /* margin-left: 10px;
   margin-right: 10px; */
   transition: all .2s ease-in-out;
+}
+
+.card.section.photo-gallery {
+  height: 380px;
+}
+
+.card.section.photo-gallery h2 {
+  font-size: 26px;
 }
 
 .card.section:hover {
@@ -388,6 +435,10 @@ a.card-text:hover {
   margin-bottom: 10px;
 }
 
+.site-path h4 {
+  margin: 0px 0px 65px 0px;
+}
+
 @media (max-width: 1399px) {
   .nav-text-one {
     padding-top: 2.45em !important;
@@ -416,6 +467,11 @@ a.card-text:hover {
   .foot-image {
     display: none;
   }
+  
+  .card.section.photo-gallery {
+    height: 370px;
+  }
+  
 }
 
 @media (max-width: 1107px) {
@@ -433,6 +489,14 @@ a.card-text:hover {
 }
 
 @media (max-width: 1048px) {
+
+  .gallery-holder {
+    padding-bottom: 50px;
+  }
+
+  .card.section.photo-gallery {
+    height: 300px;
+  }
 
   .full-head {
     display: none;
@@ -628,6 +692,9 @@ a.card-text:hover {
   padding-top: 0px;
   font-size: 16px;
 }
+.card.section.photo-gallery h2 {
+  font-size: 22px;
+}
 
 img.pin {
   width: 20px !important;
@@ -660,11 +727,15 @@ img.pin {
   .card.section {
     height: 250px;
   }
+  
 }
 
 @media (max-width: 768px) {
   .card.section {
     height: 220px;
+  }
+  .card.section.photo-gallery {
+    height: 320px;
   }
 }
 
