@@ -9,7 +9,6 @@ body {}
 a {
   font-family: 'Jost';
   font-size: 16px;
-
   top: 50%;
   margin-top: -0.625em;
   font-weight: 500 !important;
@@ -155,6 +154,7 @@ button.gos-uslugi {
   padding: 30px;
   box-shadow: 0px 0px 15px rgba(55, 113, 201, 0.5);
   margin-bottom: 50px;
+  height: 550px;
   /* margin-left: 10px;
   margin-right: 10px; */
   transition: all .2s ease-in-out;
@@ -306,7 +306,7 @@ hr {
   width: 100%
 }
 
-.nav-link.active {
+.nav-link:hover {
   text-decoration: underline;
 }
 
@@ -320,22 +320,25 @@ nav {
   background: #103261;
 }
 
-
+.drop-right {
+  right: 0;
+}
 
 .nav-text-one {
-  padding-top: 1.65em !important;
+  padding-top: 1.925em !important;
+  margin-bottom: 14px;
 }
 
 .nav-text-two {
-  padding-top: 0.9em !important;
+  padding-top: 1.3em !important;
 }
 
 .nav-text-three {
-  padding-top: 0.9em !important;
+  padding-top: 1.3em !important;
 }
 
 .nav-text-four {
-  padding-top: 0.9em !important;
+  padding-top: 1.3em !important;
 }
 
 .full-head-mob {
@@ -343,21 +346,65 @@ nav {
   
 }
 
+.navigate {
+  max-width: 1400px!important;
+}
+
 .over-h { 
   overflow: hidden;
+}
+
+.dropdown .dropdown-menu { 
+  display: block; 
+  visibility: hidden;
+   opacity: 0;
+   transition: all 0.2s ase;
+   -moz-transition: all 0.2s ease;
+   -webkit-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+ } 
+ .dropdown:hover .dropdown-menu { 
+  visibility: visible;
+     opacity: 1;
+   } 
+   .dropdown { 
+    display: inline-block;
+   }
+
+.dropdown-menu {
+  color: #040A3D;
+  padding: 25px 0px 5px 0px !important;
+  border-radius: 20px !important;
+  margin-top: 0.6rem !important;
+}
+
+.dropdown-item {
+  color: #040A3D !important;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1399px) {
   .nav-text-one {
     padding-top: 2.45em !important;
+    margin-bottom: 22px;
+  }
+
+  .navigate {
+    max-width: 1140px!important;
   }
 
   .nav-text-two {
     padding-top: 1.7em !important;
+    margin-bottom: 10px;
+  }
+
+  .nav-text-three {
+    padding-top: 0.9em !important;
   }
 
   .nav-text-four {
-    padding-top: 1.7em !important;
+    padding-top: 0.9em !important;
   }
 }
 
@@ -376,8 +423,24 @@ nav {
 }
 
 @media (max-width: 1048px) {
+
   .full-head {
     display: none;
+  }
+
+  .full-head-mob {
+    display: block;
+    background-image: url(../pictures/olimp-head.png);
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: rgba(111, 146, 203, 1);
+    min-height: 438px;
+    height: 488px;
+  }
+
+  .card.section {
+    height: 300px;
   }
 
   .collapse {
@@ -392,18 +455,6 @@ nav {
     height: 95vh ;
     z-index: 2;
   }
-    
-
-  .full-head-mob {
-    display: block;
-    background-image: url(../pictures/olimp-head.png);
-    background-size: 115%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-color: rgba(111, 146, 203, 1);
-    min-height: 438px;
-    height: 488px;
-  }
 
   .gos-uslugi h4 {
     font-size: 14px;  
@@ -413,7 +464,7 @@ nav {
   }
   
   .cards-holder h5 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   
   .cards-holder h4 {
@@ -580,6 +631,20 @@ img.pin {
 }
 
 }
+
+
+@media (max-width: 991px) {
+  .card.section {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card.section {
+    height: 220px;
+  }
+}
+
 
 .sait-nn {
   text-align: end;
@@ -784,6 +849,7 @@ img.pin {
   height: 41px;
   width: calc(80% - 100px);
   min-width: 180px;
+  max-width: 600px;
   background-color: rgb(255, 255, 255, 0);
   border: 2px solid #FFF;
   color: #FFF;
@@ -814,8 +880,8 @@ img.pin {
 
 .cecutient {
   position: fixed;
-  right: 5%;
-  top: 35%;
+  right: 0%;
+  top: 300px;
   padding: 10px 10px;
   display: none;
   width: 260px !important;

@@ -8,27 +8,26 @@
   <meta name="docsearch:language" content="ru">
   <meta name="docsearch:version" content="5.0">
   <meta content="Олимпиец">
-
   <title>«Олимпиец»</title>
-  <link rel="shortcut icon" href="assets\pictures\olimp.svg" type="image/x-icon" />
 
-  <link rel="stylesheet" href="assets\css\index.css" />
-  <link rel="stylesheet" href="assets\css\bootstrap.css" />
-  <link rel="stylesheet" href="assets\css\owl.carousel.css" />
-  <link href="https://fonts.cdnfonts.com/css/jost-3?styles=170275,80822,80812,80815,80817,80820,80808,80810,80806"
-    rel="stylesheet">
-
+  <link rel="shortcut icon" href="assets\pictures\olimp.svg" type="image/x-icon"/>
+  <link rel="stylesheet" href="assets\css\index.css"/>
+  <link rel="stylesheet" href="assets\css\bootstrap.css"/>
+  <link rel="stylesheet" href="assets\css\owl.carousel.css"/>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/gosuslugi.css">
     
   <script src="js\bootstrap.bundle.js"></script>
   <script src="js\jquery-3.7.1.min.js"></script>
   <script src="js\owl.carousel.js"></script>
   <script src="js/jquery.cookie.js"></script>
+  <script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
   <script src="js\index.js"></script>
 
 </head>
 
 <body>
-  <div class="full-head">
+  <section class="full-head">
     <div class="bg-head">
       <div class="row justify-content-start" style="min-height: 328px; margin-right: 0px; padding: 30px 0px 30px 0px">
         <div class="col-2 align-self-center text-center">
@@ -38,7 +37,7 @@
           <div class="bg-head-h5">Государственное бюджетное учреждение дополнительного образования </div>
           <div class="bg-head-h5">«Нижегородская областная спортивная школа „Олимпиец“» </div>
           <div class="row justify-content-end">
-            <div class="col-9 justify-content-center">
+            <div class="col-9 justify-content-center site-info">
               <hr>
 
               <ul class="list-inline" style="display: flex;">
@@ -77,7 +76,6 @@
               <a id="special_link" class="box__item-blind justify-content-end">
                 <img src="assets/pictures/ochki.svg" id="show_img" alt="" style="margin-bottom: 3px;">
               </a>
-
               <a class="text-block justify-content-end">
                 Карта сайта
               </a>
@@ -102,20 +100,68 @@
           <li class="nav-item">
             <a class="nav-text-one nav-link active" aria-current="page" href="#">Главная</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-text-three nav-link" href="#">Сведения об образовательной организации</a>
+          <li class="nav-item dropdown">
+            <a class="nav-text-three nav-link" href="#" 
+            id="dropdown-info-org" role="button" aria-expanded="false">
+            Сведения об образовательной организации</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-info-org">
+              <li><a class="dropdown-item rounded-pill" href="#">Основные сведения</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Структура и органы управления образовательной организацией</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Документы</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Образование</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Руководство. Педагогический состав.</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Платные образовательные услуги</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Финансово-хозяйственная деятельность</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Вакантные места для приема (перевода)</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Доступная среда</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Международное сотрудничество</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-text-four nav-link" href="#">Отдел спортивной подготовки ГБУ ДО НОСШ «Олимпиец»</a>
+          <li class="nav-item dropdown">
+            <a class="nav-text-four nav-link" href="#" 
+            id="dropdown-osp-olimp" role="button" aria-expanded="false">
+            Отдел спортивной подготовки ГБУ ДО НОСШ «Олимпиец»</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-osp-olimp">
+              <li><a class="dropdown-item rounded-pill" href="#">Дистанционное обучение</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Общие сведения</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Отделение "Плавание"</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Отделение "Каратэ"</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Отделение "Греко-римская борьба"</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Отделение "Мини-футбол"</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Целевая модель наставничества</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-text-one nav-link" href="#">Родителям</a>
+          <li class="nav-item dropdown">
+            <a class="nav-text-one nav-link" href="#" 
+            id="dropdown-parents" role="button" aria-expanded="false">
+            Родителям</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-parents">
+              <li><a class="dropdown-item rounded-pill" href="#">Консультации для родителей</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Методические рекомендации</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Спортивная библиотека для родителей</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-text-two nav-link" href="#">Противодействие коррупции</a>
+          <li class="nav-item dropdown">
+            <a class="nav-text-two nav-link" href="#" 
+            id="dropdown-corruption" role="button" aria-expanded="false">
+            Противодействие коррупции</a>
+            <ul class="dropdown-menu drop-right" aria-labelledby="dropdown-corruption">
+              <li><a class="dropdown-item rounded-pill" href="#">
+                Нормативные правовые и иные акты в сфере противодействия коррупции
+              </a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Методические рекомендации по противодействию коррупции</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Документы ГБУ ДО НОСШ "Олимпиец"</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-text-two nav-link" href="#">Обращение граждан</a>
+          <li class="nav-item dropdown">
+            <a class="nav-text-two nav-link" href="#" 
+            id="dropdown-feedback" role="button" aria-expanded="false">
+            Обращение граждан</a>
+            <ul class="dropdown-menu drop-right" aria-labelledby="dropdown-feedback">
+              <li><a class="dropdown-item rounded-pill" href="#">Обращения граждан</a></li>
+              <li><a class="dropdown-item rounded-pill" href="#">Ход рассмотрения электронных обращений граждан</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-text-one nav-link" href="#">Контакты</a>
@@ -123,11 +169,11 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </section>
 
 
 
-  <div class="full-head-mob">
+  <section class="full-head-mob">
     <div class="row justify-content-end" style="margin: 0px;">
       <!-- Collapse button -->
       <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" 
@@ -227,7 +273,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
@@ -336,20 +382,42 @@
     </div>
   </div>
 
-
-
-
-  <div class="container gos-uslugi align-self-center">
+<!-- gos-uslugi START -->
+  <section id="gos-uslugi-widget" class="container gos-uslugi align-self-center">
     <div class="row justify-content-start" style="margin-top: 30px; margin-bottom: 30px;">
-      <div class="col-6 align-self-center text-start">
-        <h4>Проблемы с записью в спортивную секцию? Спортивные площадки требуют ремонта?</h4>
-        <button type="button" class="btn btn-primary gos-uslugi">Напишите об этом</button>
-      </div>
-      <div class="col-6 align-self-center text-end">
-        <img src="assets\pictures\gos-uslugi.png" alt="" class="img-gos">
-      </div>
+        <div id='js-show-iframe-wrapper'>
+          <div class='pos-banner-fluid bf-75'>
+            <div class='bf-75__decor'>
+              <div class='bf-75__logo-wrap'>
+                <img class='bf-75__logo'
+                  src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg'
+                  alt='Госуслуги'/>
+                <div class='bf-75__slogan'>Решаем вместе</div>
+              </div>
+            </div>
+            <div class='bf-75__content'>
+              <div class='bf-75__description'>
+                  <span class='bf-75__text'>
+                    Есть проблемы с дополнительным образованием детей? С записью в кружки и секции?
+                  </span>
+              </div>
+              <div class='bf-75__bottom-wrap'>
+                <div class='bf-75__btn-wrap'>
+                  <button class='pos-banner-btn_2' type='button'>Напишите об этом</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        (function(){
+          "use strict";function ownKeys(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);if(t)r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});n.push.apply(n,r)}return n}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(n),true).forEach(function(t){_defineProperty(e,t,n[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(n));else ownKeys(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function _defineProperty(e,t,n){if(t in e)Object.defineProperty(e,t,{value:n,enumerable:true,configurable:true,writable:true});else e[t]=n;return e}var POS_PREFIX_75="--pos-banner-fluid-75__",posOptionsInitialBanner75={background:"#ffffff","grid-template-columns":"100%","grid-template-rows":"260px auto","max-width":"1422px","text-font-size":"20px","description-margin":"0 0 24px 0","button-wrap-max-width":"100%","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/66/banner-fluid-bg-66.svg')","bg-url-position":"center top","content-padding":"36px 24px","content-grid-row":"0","logo-wrap-padding":"12px 14px 10px 12px","logo-width":"65px","logo-wrap-top":"0","slogan-font-size":"12px","logo-box-shadow":"none"},setStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_75;Object.keys(e).forEach(function(r){t.style.setProperty(n+r,e[r])})},removeStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_75;Object.keys(e).forEach(function(e){t.style.removeProperty(n+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner75),n=document.getElementById("js-show-iframe-wrapper"),r=n?n.offsetWidth:document.body.offsetWidth;if(r>340)t["button-wrap-max-width"]="209px";if(r>360)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/66/banner-fluid-bg-66.svg')",t["grid-template-rows"]="244px auto",t["content-padding"]="20px 16px 32px 24px";if(r>482)t["text-font-size"]="24px";if(r>568)t["text-font-size"]="24px",t["grid-template-columns"]="312px auto",t["grid-template-rows"]="332px",t["content-grid-row"]="1",t["content-padding"]="48px 24px",t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/66/banner-fluid-bg-66-2.svg')";if(r>753)t["grid-template-columns"]="1fr 1fr",t["grid-template-rows"]="268px",t["bg-url-position"]="25% top",t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/66/banner-fluid-bg-66.svg')",t["content-padding"]="30px 24px";if(r>820)t["grid-template-columns"]="1fr 1fr",t["text-margin"]="0 100px 12px 0";if(r>1098)t["grid-template-rows"]="300px",t["text-font-size"]="32px",t["content-padding"]="34px 50px",t["logo-width"]="78px",t["slogan-font-size"]="15px",t["logo-wrap-padding"]="20px 16px 16px",t["text-margin"]="0 80px 12px 0",t["bg-url-position"]="center top",t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/66/banner-fluid-bg-66-3.svg')";if(r>1422)t["grid-template-rows"]="268px",t["max-width"]="1440px",t["grid-template-columns"]="1fr 1fr",t["logo-box-shadow"]="0px 1px 4px #E3EBFC, 0px 24px 48px rgba(230, 235, 245, 0.4)",t.background="linear-gradient(90deg, #ffffff 50%, #E0ECFE 50%)";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner75);window.removeEventListener("resize",changePosBannerOnResize),removeStyles(t,e)};
+          })()
+          Widget("https://pos.gosuslugi.ru/form", 224511)
+        </script>
     </div>
-  </div>
+  </section>
+  <!-- gos-uslugi END -->
 
   <div style="background: rgba(176, 202, 243, 0.9);">
 

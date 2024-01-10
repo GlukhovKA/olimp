@@ -15,6 +15,7 @@ function myFunction() {
 $('.second-button').on('click', function () {
     $('.animated-icon2').toggleClass('open');
 	$('body').toggleClass('over-h')
+	// $('.site-info').css('display', 'none');
   });
 
 let owl= $('.owl-carousel');

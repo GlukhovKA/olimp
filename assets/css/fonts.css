@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Jost'), url('/assets/fonts-woff/Jost[wght].woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-Thin.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-ExtraLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Jost'), url('/assets/fonts-woff/Jost-Black.woff') format('woff');
+}
